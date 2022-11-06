@@ -5,6 +5,7 @@
 
 Welcome to Yummy-Alarmmy's documentation!
 =========================================
+Alarm clock
 
 .. toctree::
    :maxdepth: 2
