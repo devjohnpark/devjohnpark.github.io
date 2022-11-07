@@ -4,6 +4,8 @@
    contain the root `toctree` directive.
 
 Welcome to Yummy-Alarmmy's documentation!
+
+hi~
 =========================================
 
 .. toctree::
