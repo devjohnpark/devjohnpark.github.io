@@ -4,12 +4,17 @@
    contain the root `toctree` directive.
 
 Welcome to Yummy-Alarmmy's documentation!
+
+hi~
 =========================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
+   Options/first
+   Options/second
+   Options/third
 
 
 Indices and tables

@@ -9,9 +9,12 @@ hi~
 =========================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
+   Options/first
+   Options/second
+   Options/third
 
 
 Indices and tables
