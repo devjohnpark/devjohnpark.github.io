@@ -4,8 +4,8 @@
    contain the root `toctree` directive.
 
 Welcome to Yummy-Alarmmy's documentation!
+Yummy-Alarmmy : Restaurant reservation alarm Service!
 
-hi~
 =========================================
 
 .. toctree::
@@ -15,11 +15,3 @@ hi~
    Options/first
    Options/second
    Options/third
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
