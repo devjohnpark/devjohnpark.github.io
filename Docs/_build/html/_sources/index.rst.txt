@@ -12,6 +12,6 @@ Yummy-Alarmmy : Restaurant reservation alarm Service!
    :maxdepth: 3
    :caption: Contents:
 
-   Options/first
+   first
    Options/second
    Options/third
