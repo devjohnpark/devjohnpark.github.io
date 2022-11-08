@@ -5,6 +5,8 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+from sphinx.application import Sphinx
+from sphinx.util.docutils import SphinxDirective
 
 project = 'Yummy-Alarmmy'
 copyright = '2022, Kim'
