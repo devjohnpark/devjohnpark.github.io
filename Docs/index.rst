@@ -18,6 +18,6 @@ Yummy-Alarmmy : Restaurant reservation alarm Service!
 
 .. toctree::
    :maxdepth: 2
-   :caption: about
+   :caption: about:
 
    about
