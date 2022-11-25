@@ -1,7 +1,7 @@
 About Project
 =========================================
 We inform you of the reservation **opening time of the restaurant on the "Catch Table" website**
-through the Telegram bot We made.
+through the Telegram bot we made. In addition, monitoring starts 30 minutes before the reservation open time and notifies you through Telegram when it opens.
 
 ============  =================  ====================
  Student id        Name              Doing
