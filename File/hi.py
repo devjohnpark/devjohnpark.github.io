@@ -1,14 +1,56 @@
-dic = {1: [0, 0], 2: [0, 1], 3: [0, 2],
-           4: [1, 0], 5: [1, 1], 6: [1, 2],
-           7: [2, 0], 8: [2, 1], 9: [2, 2],
-           '*':[3, 0], 0: [3, 1], '#': [3, 2]}
+import telepot
+import requests
+from bs4 import BeautifulSoup
+def WorldCup(nat):
+  url = "https://www.viagogo.com/kr/Sports-Tickets/Soccer/World-Cup-Tickets?AffiliateID=49&adposition=&PCID=PSKRGOOFOOTB9A1E2CB2C9386&AdID=603897122321&MetroRegionID=&psc=%2c&ps=%2c&ps_p=0&ps_c=16568379592&ps_ag=134116988066&ps_tg=kwd-324536089829&ps_ad=603897122321&ps_adp=%2c&ps_fi=%2c&ps_li=%2c&ps_lp=1009871&ps_n=g&ps_d=c&gclid=Cj0KCQiA1ZGcBhCoARIsAGQ0kkp45mTtAUEoN1sDIVApy9N0WjKRTEkOtWUuO0kZzso-_V_2QsDGNkMaAtqsEALw_wcB"
+  html = requests.get(url)
+  soup = BeautifulSoup(html.text, 'html.parser')
+  nation = nat
+  boxer = (soup.select('div.el-row-div'))
+  teamfir = []
+  teamsec = []
+  for box in boxer:
+    k = box.select_one('span.camo')
+    s = box.select_one('div.t')
+    btn = box.select_one('div.pri')
+    k.select_one('strong')
+    k = k.get_text()
+    k = k[:k.find('-')].strip()
+    teamlist = k.split('vs')
+    teamfir = teamlist[0]
+    teamsec = teamlist[1]
+    #print(teamlist)
+    if teamlist[0].strip() == nation:
+      date = s.select_one('span.h')
+      time = s.select_one('span.vmid')
+      date = date.get_text()
+      time = time.get_text()
+      teamfir = teamlist[0]
+      teamsec = teamlist[1]
+      if(btn==None):
+        return "NO TICKET \n{} \n{}\n {} vs {} ".format(date , time , teamfir,teamsec)
 
-left_s = dic['*']
-right_s = dic['#']
-now = dic[4]
-left_d = 0
-right_d = 0
-for a, b, c in zip(left_s , right_s , now):
-    left_d += abs(a-c)
-    right_d += abs(b-c)
-print(left_d ,right_d)
+      return "{} \n{}\n {} vs {} ".format(date , time , teamfir,teamsec)
+      
+    elif teamlist[1].strip() == nation:
+      date = s.select_one('span.h')
+      time = s.select_one('span.vmid')
+      date = date.get_text()
+      time = time.get_text()
+      teamfir = teamlist[0]
+      teamsec = teamlist[1]
+      if(btn==None):
+        return "NO TICKET \n{} \n{}\n {} vs {} ".format(date , time , teamfir,teamsec)
+      return "{} \n{}\n {} vs {} ".format(date , time , teamfir,teamsec)
+      
+  return "No search"
+
+TELEGRAM_TOKEN = "5613859613:AAFoMUPlTxLRFEu6ETZRYT1EAYjbmqrmbB4"
+def handler(msg):
+    content_type, chat_Type, chat_id, msg_date, msg_id = telepot.glance(msg,long = True)
+
+    if content_type == "text":
+        bot.sendMessage(chat_id,"[Info]\n{}".format(WorldCup(msg["text"])))
+
+bot = telepot.Bot(TELEGRAM_TOKEN)
+bot.message_loop(handler , run_forever=True)
