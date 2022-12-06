@@ -1,6 +1,7 @@
 ---
 layout: default
 title: FEATURES
+permalink: /2_feature/
 ---
 
 * Easy and Convenient
