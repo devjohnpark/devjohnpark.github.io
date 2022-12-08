@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Community
-permalink: /4_community/
+permalink: /Yummy-Alarmmy/4_community/
 ---
 
 Our Community

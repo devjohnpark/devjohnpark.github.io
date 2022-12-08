@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ABOUT
-permalink: /about/
+permalink: /Yummy-Alarmmy/about/
 ---
 
 About Project
