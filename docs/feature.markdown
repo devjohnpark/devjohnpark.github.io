@@ -1,7 +1,7 @@
 ---
 layout: default
 title: FEATURES
-permalink: /Yummy-Alarmmy/2_feature/
+permalink: /2_feature/
 ---
 
 * Easy and Convenient
