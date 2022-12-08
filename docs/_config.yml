@@ -22,8 +22,8 @@ title: YUMMY-ALARMMY
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a site for YUMMY-ALARMMY, by which you can get alarmed of your favorite restaurants!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://devjohnpark.github.io/Yummy-Alarmmy" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "https://devjohnpark.github.io/Yummy-Alarmmy" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
