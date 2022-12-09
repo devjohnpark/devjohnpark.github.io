@@ -1,6 +1,6 @@
 ## information
 
-We inform you of the reservation opening time of the restaurant on the “Catch  Table” website through the Telegram bot we made!.  
+We inform through the Telegram bot we made.
 
 ## Task
 

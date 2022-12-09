@@ -1,7 +1,9 @@
 About Project
 =========================================
-We inform you of the reservation **opening time of the restaurant on the "Catch Table" website**
-through the Telegram bot we made. In addition, monitoring starts 30 minutes before the reservation open time and notifies you through Telegram when it opens.
+CupBot informs you of future World Cup matches by certain countries you choose, 
+just by entering the country name into our telegram bot. You can also know 
+if the tickets for the match are sold out or not.
+
 
 ============  =================  ====================
  Student id        Name              Doing
