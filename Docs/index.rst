@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Yummy-Alarmmy's documentation!
-Yummy-Alarmmy : Restaurant reservation alarm Service!
+Welcome to Cup_Bot's documentation!
+Cup-Bot : WorldCup alarm Service!
 
 =========================================
 
