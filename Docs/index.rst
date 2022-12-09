@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to Cup_Bot's documentation!
-Cup-Bot : WorldCup alarm Service!
+Cup-Bot : WorldCup alarm Service!!
 
 =========================================
 
